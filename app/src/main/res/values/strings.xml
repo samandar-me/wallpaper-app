@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WallpaperApp</string>
+    <string name="wallpapers">Wallpapers</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="register">Register</string>
+    <string name="don">Don\'t have an account?</string>
+    <string name="l">Login with Google</string>
+    <string name="name">Name</string>
+    <string name="alr">Already have an account?</string>
+    <string name="client_id">420652581382–47pcvi0karr9palo5e29flnaahtlee29.apps.googleusercontent.com</string>
+    <string name="logged_out">Successfully logged out</string>
+    <string name="sign_out">Sign out</string>
+    <string name="are_you">Do you want to sign out?</string>
+    <string name="succ">Successfully signed out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="images">Images</string>
+    <string name="cate">Categories</string>
+    <string name="fav">Favorites</string>
+    <string name="search">Search images</string>
+    <string name="s">Search</string>
+    <string name="search_your_ideas">Search your ideas</string>
+    <string name="gall">Gallery</string>
+    <string name="saved">Saved to Favorites</string>
+    <string name="delete">Delete</string>
+    <string name="del">Deleted</string>
+    <string name="sav">Saved to Gallery</string>
+    <string name="del_all">Do you want to delete all favorite images?</string>
+    <string name="de">Delete all</string>
+    <string name="all_del">Deleted all images</string>
+    <string name="no_fav">No favorite images</string>
+</resources>

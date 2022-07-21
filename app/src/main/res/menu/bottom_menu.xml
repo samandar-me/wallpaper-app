@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuImages"
+        android:icon="@drawable/ic_baseline_eco_24"
+        android:title="@string/images" />
+
+    <item
+        android:id="@+id/menuCategories"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:title="@string/cate" />
+
+    <item
+        android:id="@+id/menuSearch"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/s" />
+
+    <item
+        android:id="@+id/menuFavorites"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="@string/fav" />
+
+</menu>
