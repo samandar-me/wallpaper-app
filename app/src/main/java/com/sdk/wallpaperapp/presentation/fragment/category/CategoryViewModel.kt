@@ -5,11 +5,13 @@ import androidx.lifecycle.viewModelScope
 import com.sdk.wallpaperapp.domain.use_case.remote.SearchImageUseCase
 import com.sdk.wallpaperapp.presentation.fragment.images.ImagesApiState
 import com.sdk.wallpaperapp.source.Response
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class CategoryViewModel @Inject constructor(
     private val useCase: SearchImageUseCase
 ): ViewModel() {

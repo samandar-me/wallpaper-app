@@ -1,4 +1,4 @@
-package com.sdk.wallpaperapp.presentation.fragment.detail
+package com.sdk.wallpaperapp.presentation.fragment.detail_category
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -15,19 +15,20 @@ import androidx.navigation.findNavController
 import com.bumptech.glide.Glide
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.sdk.wallpaperapp.R
-import com.sdk.wallpaperapp.databinding.FragmentDetailBinding
+import com.sdk.wallpaperapp.databinding.FragmentDetailCategoryBinding
 import com.sdk.wallpaperapp.domain.model.PixelImage
 import com.sdk.wallpaperapp.manager.MyWallpaperManager
 import com.sdk.wallpaperapp.presentation.activity.main.MainActivity
+import com.sdk.wallpaperapp.presentation.fragment.detail.DetailViewModel
 import com.sdk.wallpaperapp.source.viewBinding
 import com.sdk.wallpaperapp.util.success
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class DetailFragment : Fragment(R.layout.fragment_detail) {
+class DetailCategoryFragment : Fragment(R.layout.fragment_detail_category) {
+    private val binding by viewBinding { FragmentDetailCategoryBinding.bind(it) }
+    private val viewModel: DetailCategoryViewModel by viewModels()
     private lateinit var myWallpaperManager: MyWallpaperManager
-    private val binding by viewBinding { FragmentDetailBinding.bind(it) }
-    private val viewModel: DetailViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -51,13 +52,12 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
             (activity as MainActivity).layoutInflater.inflate(R.layout.bottom_sheet, null)
         val linearFav: LinearLayout = view.findViewById(R.id.linearFav)
         val linearGal: LinearLayout = view.findViewById(R.id.linearGal)
-        val linearWall: LinearLayout = view.findViewById(R.id.linearWall)
         val textView: AppCompatTextView = view.findViewById(R.id.textDelFav)
         val imageView: AppCompatImageView = view.findViewById(R.id.imageDelFav)
         val textLink: AppCompatTextView = view.findViewById(R.id.textLink)
+        val linearWall: LinearLayout = view.findViewById(R.id.linearWall)
         textLink.text = pixelImage.url
         val bottomSheet = BottomSheetDialog(requireContext())
-        bottomSheet.setContentView(view)
         bottomSheet.dismissWithAnimation = true
         linearWall.setOnClickListener {
             val bitmap: Bitmap = binding.imageView.drawable.toBitmap()
@@ -86,6 +86,7 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
             saveToGallery()
             bottomSheet.dismiss()
         }
+        bottomSheet.setContentView(view)
         bottomSheet.show()
     }
 

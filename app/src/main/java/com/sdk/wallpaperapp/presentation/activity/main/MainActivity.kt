@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity(), SearchFragment.LogOutClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Constants.random.value = random()
     }
 
     override fun onClick() {
@@ -58,9 +57,5 @@ class MainActivity : AppCompatActivity(), SearchFragment.LogOutClickListener {
                 }
             }
         }.create().show()
-    }
-    private fun random(): Int {
-        val random = Random()
-        return random.nextInt(8)
     }
 }

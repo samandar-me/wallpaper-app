@@ -9,7 +9,9 @@
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/ic_baseline_eco_24.xml" value="0.2805" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.2805" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.2805" />
+        <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.2735" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.2735" />
+        <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/ic_baseline_wallpaper_24.xml" value="0.2735" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/image_shadow.xml" value="0.2805" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/drawable/shape_search.xml" value="0.2805" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/activity_login.xml" value="0.2747863247863248" />
@@ -21,6 +23,7 @@
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_categories.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_category.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_detail.xml" value="0.2863247863247863" />
+        <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_detail_category.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_favorite.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_images.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/GoogleMap/WallpaperApp/app/src/main/res/layout/fragment_main.xml" value="0.2863247863247863" />

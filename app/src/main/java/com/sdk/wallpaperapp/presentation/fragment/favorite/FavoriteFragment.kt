@@ -41,8 +41,9 @@ class FavoriteFragment : Fragment(R.layout.fragment_favorite) {
                 it.url,
                 it.photographer,
                 it.photographer_url,
+                it.portrait,
                 it.src,
-                it.src,
+                it.image,
                 true
             )
             val bundle = bundleOf("pixel" to image)

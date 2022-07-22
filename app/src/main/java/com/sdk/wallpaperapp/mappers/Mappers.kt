@@ -10,6 +10,7 @@ fun Photo.toPixelImage(): PixelImage {
         photographer = photographer,
         photographer_url = photographer_url,
         src = src.medium,
-        portrait = src.portrait
+        portrait = src.portrait,
+        image = src.small
     )
 }

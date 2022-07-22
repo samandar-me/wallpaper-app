@@ -49,10 +49,23 @@
         android:id="@+id/categoryFragment"
         android:name="com.sdk.wallpaperapp.presentation.fragment.category.CategoryFragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_detailCategoryFragment"
+            app:destination="@id/detailCategoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.sdk.wallpaperapp.presentation.fragment.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/detailCategoryFragment"
+        android:name="com.sdk.wallpaperapp.presentation.fragment.detail_category.DetailCategoryFragment"
+        android:label="fragment_detail_category"
+        tools:layout="@layout/fragment_detail_category" />
 </navigation>

@@ -1,7 +1,10 @@
 package com.sdk.wallpaperapp.presentation.fragment.images
 
+import android.content.Context
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -13,6 +16,7 @@ import com.sdk.wallpaperapp.R
 import com.sdk.wallpaperapp.databinding.FragmentImagesBinding
 import com.sdk.wallpaperapp.source.viewBinding
 import com.sdk.wallpaperapp.util.Constants
+import com.sdk.wallpaperapp.util.success
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import java.util.*
@@ -20,8 +24,8 @@ import java.util.*
 @AndroidEntryPoint
 class ImagesFragment : Fragment(R.layout.fragment_images) {
 
-    private lateinit var imagesAdapter: ImagesAdapter
     private val binding by viewBinding { FragmentImagesBinding.bind(it) }
+    private lateinit var imagesAdapter: ImagesAdapter
     private val viewModel: ImagesViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,13 +41,10 @@ class ImagesFragment : Fragment(R.layout.fragment_images) {
             val bundle = bundleOf("pixel" to it)
             view.findNavController().navigate(R.id.action_mainFragment_to_detailFragment, bundle)
         }
-        Constants.random.observe(viewLifecycleOwner) {
-            collectImage(it)
-        }
+        collectImage()
     }
 
-    private fun collectImage(random: Int) {
-        viewModel.getAllImages(random, 100)
+    private fun collectImage() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.images.collect {
                 when (it) {

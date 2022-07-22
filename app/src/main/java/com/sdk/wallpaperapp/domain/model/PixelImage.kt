@@ -16,5 +16,6 @@ data class PixelImage(
     val photographer_url: String,
     val portrait: String,
     val src: String,
+    val image: String,
     val isSaved: Boolean = false
 ): Parcelable
